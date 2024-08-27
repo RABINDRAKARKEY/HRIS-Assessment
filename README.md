@@ -64,3 +64,57 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# HRIS Survey System
+
+## Introduction
+The HRIS Survey System allows administrators to create surveys and collect employee responses, providing valuable insights into employee satisfaction and engagement.
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/hris-survey-system.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd hris-survey-system
+   ```
+3. Install dependencies:
+   ```bash
+   composer install
+   npm install
+   ```
+4. Create a copy of the `.env` file and update database credentials:
+   ```bash
+   cp .env.example .env
+   ```
+5. Generate an application key:
+   ```bash
+   php artisan key:generate
+   ```
+6. Run the migrations:
+   ```bash
+   php artisan migrate
+   ```
+
+## Running the Application
+Start the development server:
+```bash
+php artisan serve
+
+
+
+### 5. **Submit the Repository Link**
+- pushing the code to  GitHub repository "https://github.com/RABINDRAKARKEY/HRIS-Assessment/tree/master".
+- Double-checked "README file is updated and clear".
+- To submit the link to `it@talentconnects.com.np`.
+
+### Final Note:
+- Ensured that code is well-organized and follows best practices.
+- Considered using Laravel features like
+        - policies,
+        - form requests,
+        - and middleware
+            - to enhance security and functionality.
+### 

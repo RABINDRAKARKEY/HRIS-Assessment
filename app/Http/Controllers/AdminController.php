@@ -8,6 +8,9 @@ use App\Models\Post;
 
 use Illuminate\Support\Facades\Auth;
 
+use App\Models\SurveyQuestion;
+
+use App\Models\SurveyResponse;
 
 class AdminController extends Controller
 {
@@ -86,6 +89,34 @@ class AdminController extends Controller
 
         $post->save();
         return redirect()->back();
+    }
+
+
+
+    public function showSurveyForm($surveyId)
+    {
+        $survey = Survey::with('questions')->findOrFail($surveyId);
+        return view('survey.form', compact('survey'));
+    }
+
+    // Store the survey response
+    public function submitSurvey(Request $request, $surveyId)
+    {
+        $survey = Survey::findOrFail($surveyId);
+        $response = new SurveyResponse;
+        $response->survey_id = $survey->id;
+        $response->user_id = auth()->id(); // Assuming user authentication is in place
+        $response->responses = json_encode($request->all()); // Save all responses as JSON
+        $response->save();
+
+        return redirect()->route('survey.thankyou');
+    }
+
+    // Show survey results
+    public function showSurveyResults($surveyId)
+    {
+        $survey = Survey::with('responses')->findOrFail($surveyId);
+        return view('survey.results', compact('survey'));
     }
 }
 

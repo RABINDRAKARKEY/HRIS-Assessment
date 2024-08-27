@@ -49,3 +49,4 @@ Route::get('/delete_post/{id}', [AdminController::class, 'delete_post']);
 Route::get('/edit_page/{id}', [AdminController::class, 'edit_page']);
 
 Route::post('/update_post/{id}', [AdminController::class, 'update_post']);
+

@@ -60,14 +60,14 @@
 
             <table class="table_deg">
                 <tr class="th_deg">
-                    <th>Post title</th>
-                    <th>Description</th>
+                    <th>Survey title</th>
+                    <th>Survey link</th>
                     <th>Post by</th>
-                    <th>Post status</th>
                     <th>User Type</th>
+                    <th>Post status</th>
                     <th>Image</th>
                     <th>Delete</th>
-                    <th>Edit</th>
+                    <!-- <th>Edit</th> -->
                 </tr>
 
                 @foreach ($post as $post)

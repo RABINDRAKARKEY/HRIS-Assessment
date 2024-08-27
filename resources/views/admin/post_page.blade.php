@@ -106,7 +106,7 @@
 
             @endif
 
-            <h1 class="post_title">Add post</h1>
+            <h1 class="post_title">Add survey</h1>
 
 
             <form action="{{url('add_post')}}" method="POST" enctype="multipart/form-data">
@@ -114,14 +114,14 @@
                 @csrf
                 <!--  Post title... starts here-->
                 <div class="div_center">
-                    <label>Post title</label>
+                    <label>Survey title</label>
                     <input type="text" name="title" id="" placeholder="Enter title">
                 </div>
                 <!-- Post title... starts here-->
 
                 <!-- For text description related to Post title... starts here-->
                 <div class="div_center">
-                    <label>Post description</label>
+                    <label>Survey Link</label>
                     <!-- <input type="text" name="" id=""> -->
                     <textarea name="description"></textarea>
                 </div>

@@ -57,12 +57,12 @@
     <!-- blog section end -->
     <!-- client section start -->
     <div class="client_section layout_padding">
-        @include('home.client')
+        <!-- @include('home.client') -->
     </div>
     <!-- client section start -->
     <!-- choose section start -->
     <div class="choose_section layout_padding">
-        <!-- @include('home.choose'); -->
+        @include('home.choose')
     </div>
     <!-- choose section end -->
     <!-- footer section start -->
