@@ -135,7 +135,7 @@
                         <div class="avatar"><img src="admincss/img/avatar-1.jpg" alt="..." class="img-fluid">
                             <div class="order dashbg-2">1st</div>
                         </div><a href="#" class="user-title">
-                            <h3 class="h5">Richard Nevoreski</h3><span>@richardnevo</span>
+                            <h3 class="h5">Diwash Thapa</h3><span>@diwashthapa</span>
                         </a>
                         <div class="contributions">950 Contributions</div>
                         <div class="details d-flex">
@@ -150,7 +150,7 @@
                         <div class="avatar"><img src="admincss/img/avatar-4.jpg" alt="..." class="img-fluid">
                             <div class="order dashbg-1">2nd</div>
                         </div><a href="#" class="user-title">
-                            <h3 class="h5">Samuel Watson</h3><span>@samwatson</span>
+                            <h3 class="h5">Jay Shyam Patel</h3><span>@shyampatel</span>
                         </a>
                         <div class="contributions">772 Contributions</div>
                         <div class="details d-flex">

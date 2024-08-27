@@ -2,35 +2,102 @@
 <html>
 
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     @include('admin.css')
-
     <style>
+        /* Title */
         .title_deg {
-            font-size: 30px;
+            font-size: 24px;
             font-weight: bold;
-            color: aliceblue;
-            padding: 30px;
+            color: #343a40;
+            margin-bottom: 20px;
             text-align: center;
         }
 
+        /* Table styling */
         .table_deg {
-            border: 1px solid white;
-            width: 80%;
-            text-align: center;
-            margin-left: 70px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
         }
 
         .th_deg {
-            background-color: burlywood;
-            color: Black;
+            background-color: #343a40;
+            color: white;
+            text-align: left;
         }
 
-        .img_deg {
-            width: 150px;
-            height: 100px;
-            padding: 10px;
+        .table_deg th,
+        .table_deg td {
+            padding: 12px;
+            border: 1px solid #dee2e6;
         }
+
+        .table_deg tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* .table_deg tr:hover {
+            background-color: #e9ecef;
+        } */
+
+        /* Image styling */
+        .img_deg {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* .btn-danger {
+            background-color: #dc3545;
+            border: none;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        } */
+
+        /* Alert styling */
+        /* .alert {
+            padding: 15px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        } */
+
+        /* .alert .close {
+            color: #721c24;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .alert .close:hover {
+            color: #491217;
+        } */
     </style>
 </head>
 
@@ -43,7 +110,6 @@
         <!-- Sidebar Navigation end-->
 
         <!-- Body code starts from here -->
-        <!-- @include('admin.body') -->
 
         <div class="page-content">
 
@@ -61,10 +127,10 @@
             <table class="table_deg">
                 <tr class="th_deg">
                     <th>Survey title</th>
-                    <th>Survey link</th>
+                    <th>Link to survey</th>
                     <th>Post by</th>
-                    <th>User Type</th>
                     <th>Post status</th>
+                    <th>User Type</th>
                     <th>Image</th>
                     <th>Delete</th>
                     <!-- <th>Edit</th> -->
@@ -98,28 +164,6 @@
         <!-- Body code starts from here -->
 
         @include('admin.footer')
-
-        <script type="text/javascript">
-            function confirmation(event) {
-                event.preventDefault();
-                // if (confirm("Are you sure you want to delete this post?"));
-                var urlToReddirect = event.currentTarget.getAttribute('href');
-                console.log(urlToReddirect);
-                swal({
-                        title: "Are you sure to delete this",
-                        text: "Once deleted, you will not be able to recover this post",
-                        icon: "warning",
-                        buttons: true,
-                        dangerMode: true,
-                    })
-
-                    .then((willCancel) => {
-                        if (willCancel) {
-                            window.location.href = urlToReddirect;
-                        }
-                    });
-            }
-        </script>
 </body>
 
 </html>

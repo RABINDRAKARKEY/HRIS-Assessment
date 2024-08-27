@@ -27,57 +27,46 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
+        /* Form styling */
         .div_center {
-            text-align: center;
-            padding: 30px;
+            text-align: left;
+            padding: 20px;
             margin-bottom: 20px;
-            /* Space between form elements */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         label {
-            display: inline-block;
-            width: 200px;
-            text-align: right;
-            margin-right: 10px;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         input[type="text"],
-        textarea {
-            width: 300px;
-            /* Input/textarea width */
-            padding: 10px;
-            /* Inner padding */
-            border: 1px solid #ccc;
-            /* Border styling */
-            border-radius: 5px;
-            /* Rounded corners */
-        }
-
+        textarea,
         input[type="file"] {
-            margin-left: 210px;
-            /* Align with labels */
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         input[type="submit"] {
             background-color: #007bff;
-            /* Button color */
             color: #fff;
-            /* Text color */
             padding: 10px 20px;
-            /* Button padding */
             border: none;
-            /* Remove border */
             border-radius: 5px;
-            /* Rounded corners */
             cursor: pointer;
-            /* Pointer cursor */
             transition: background-color 0.3s ease;
-            /* Hover transition */
         }
 
         input[type="submit"]:hover {
             background-color: #0056b3;
-            /* Hover color */
         }
     </style>
 </head>
