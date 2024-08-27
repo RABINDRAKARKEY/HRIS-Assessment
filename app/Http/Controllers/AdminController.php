@@ -50,18 +50,19 @@ class AdminController extends Controller
 
 
 
+    // public function show_post()
+    // {
+    //     $post = Post::all();
+    //     return view('admin.show_post', compact('post'));
+    // }
+    public function index()
+    {
+        $post = Post::all(); // Retrieve all posts
+        return view('home.service', compact('post')); // Pass $post to the view
+    }
+
     public function show_post()
     {
-        $user = Auth()->user();
-        $userid = $user->id;
-        $name = $user->name;
-        $usertype = $user->usertype;
-
-
-        $post = new Post;
-        // $post->title = $request->title;
-        // $post->description = $request->description;
-        $post->post_status = 'active';
         $post = Post::all();
         return view('admin.show_post', compact('post'));
     }

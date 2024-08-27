@@ -26,22 +26,22 @@
 <body>
     <!-- header section start -->
     <div class="header_section">
-        @include('home.header');
+        @include('home.header')
         <!-- banner section start -->
         <div class="banner_section layout_padding">
-            @include('home.banner');
+            @include('home.banner')
         </div>
         <!-- banner section end -->
     </div>
     <!-- header section end -->
     <!-- services section start -->
     <div class="services_section layout_padding">
-        @include('home.service');
+        @include('home.service')
     </div>
     <!-- services section end -->
     <!-- about section start -->
     <div class="about_section layout_padding">
-        @include('home.about');
+        @include('home.about')
     </div>
     <!-- about section end -->
     <!-- blog section start -->
