@@ -31,7 +31,9 @@
         </nav>
     </div>
     <div class="container-fluid">
-        <div class="logo"><a><img src="images/logo.png"></a></div>
+        <div class="logo"><a>
+            <img src="images/logo.png">
+        </a></div>
         <div class="menu_main">
             <ul>
                 <li class="active"><a href="">Home</a></li>
@@ -41,7 +43,7 @@
                 @if (Route::has('login'))
 
                 @auth
-                <!-- <li><a href="{{route('home')}}">Home</a></li> -->
+                <li><a href="{{route('home')}}">Home</a></li>
 
                 <!-- This part is responsible for login -->
                 <li>

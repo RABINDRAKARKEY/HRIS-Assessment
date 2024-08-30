@@ -16,6 +16,8 @@ class AdminController extends Controller
         return view('admin.post_page');
     }
 
+
+
     public function add_post(Request $request)
     {
         $user = Auth()->user();
@@ -96,6 +98,55 @@ class AdminController extends Controller
 
         $post->save();
         return redirect()->back();
+    }
+
+    public function FormsDownload()
+    {
+        return view('admin.FormsDownload');
+    }
+
+
+
+    public function showPosts()
+    {
+        $posts = Post::all();
+        return view('service', compact('posts'));
+    }
+    // In your PostController.php
+
+    public function deletePost($id)
+    {
+        $post = Post::findOrFail($id);
+        if ($post->image) {
+            File::delete(public_path('postimage/' . $post->image));
+        }
+        $post->delete();
+        return redirect()->back()->with('message', 'Survey deleted successfully!');
+    }
+    // In your PostController.php
+
+    public function addPost(Request $request)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $post = new Post();
+        $post->title = $request->title;
+        $post->description = $request->description;
+        $post->usertype = auth()->user()->usertype; // Example of getting the user type
+
+        if ($request->hasFile('image')) {
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('postimage'), $imageName);
+            $post->image = $imageName;
+        }
+
+        $post->save();
+
+        return redirect()->back()->with('message', 'Survey added successfully!');
     }
 }
 

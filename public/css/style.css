@@ -162,7 +162,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -544,7 +544,7 @@ button {
 .blog_section {
     width: 100%;
     float: left;
-    background-image: url(../images/blog-bg.png);
+    /* background-image: url(../images/blog-bg.png); */
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -556,7 +556,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
+    color: #1f1f1f;
     font-weight: bold;
     padding-top: 30px;
     text-align: center;
@@ -896,7 +896,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/footer-bg.png);
+    /* background-image: url(../images/footer-bg.png); */
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;

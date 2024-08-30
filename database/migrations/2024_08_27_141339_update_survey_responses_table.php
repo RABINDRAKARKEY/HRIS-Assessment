@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('survey_responses', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('survey_responses', function (Blueprint $table) {
+            //
         });
     }
 
@@ -22,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('survey_responses');
+        Schema::table('survey_responses', function (Blueprint $table) {
+            //
+        });
     }
 };

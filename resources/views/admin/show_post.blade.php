@@ -122,7 +122,7 @@
             @endif
 
 
-            <h1 class="title_deg">All Post</h1>
+            <h1 class="title_deg">Survey Question</h1>
 
             <table class="table_deg">
                 <tr class="th_deg">

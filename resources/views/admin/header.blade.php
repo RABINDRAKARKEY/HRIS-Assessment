@@ -15,7 +15,7 @@
             <div class="navbar-header">
                 <!-- Navbar Header--><a class="navbar-brand">
                     <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">IT </strong><strong>Talent Connects</strong></div>
-                    <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div>
+                    <div class="brand-text brand-sm"><strong class="text-primary">I</strong><strong>T</strong></div>
                 </a>
                 <!-- Sidebar Toggle Btn-->
                 <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
@@ -77,7 +77,12 @@
                 </div>
                 <!-- Tasks end-->
                 <!-- Megamenu-->
-                <div class="list-inline-item dropdown menu-large"><a href="#" data-toggle="dropdown" class="nav-link">Mega <i class="fa fa-ellipsis-v"></i></a>
+                <!-- <div class="list-inline-item dropdown menu-large">
+                    <a href="#" data-toggle="dropdown" class="nav-link">Mega
+                        <i class="fa fa-ellipsis-v">
+
+                        </i>
+                    </a>
                     <div class="dropdown-menu megamenu">
                         <div class="row">
                             <div class="col-lg-3 col-md-6"><strong class="text-uppercase">Elements Heading</strong>
@@ -138,14 +143,14 @@
                             <div class="col-lg-2 col-md-4"><a href="#" class="d-block megamenu-button-link bg-info"><i class="fa fa-clock-o"></i><strong>Demo 6</strong></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Megamenu end     -->
                 <!-- Languages dropdown    -->
                 <!-- Log out               -->
                 <div class="list-inline-item logout">
                     <x-app-layout>
                     </x-app-layout>
-                    <!-- <a id="logout" href="login.html" class="nav-link">Logout <i class="icon-logout"></i></a> -->
+                    <!-- <a id="logout" href="login.html" class="nav-link"> <i class="icon-logout"></i></a> -->
                 </div>
             </div>
         </div>
